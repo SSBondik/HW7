@@ -2,12 +2,43 @@
     box-sizing: border-box;
 }
 
+html {
+    position: relative;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
 }
 
+.clear {
+    clear: both;
+    font-size: 20px;
+    color: rgb(57, 229, 245);
+}
+
+.sticky__wrapper {
+    position: relative;
+}
+
+.sticky {
+    position: sticky;
+    width: 30px;
+    height: 30px;
+    bottom: 5%;
+    left: 96%;
+
+    a {
+        color: #008484;
+        text-decoration: none;
+        font-size: 24px;
+    }
+}
+
 .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: #a3a1a1;
     height: 70px;
     padding: 20px 50px;
@@ -24,10 +55,13 @@
     font-weight: 500;
     font-size: 20px;
     color: #ffff;
+    text-transform: uppercase;
 }
 
 .main__title {
+    margin-top: 100px;
     text-align: center;
+
 }
 
 .display {
@@ -59,5 +93,40 @@
     div {
         width: 100px;
         height: 100px;
+    }
+}
+
+.promo {
+    margin-top: 30px;
+
+    h1 {
+        color: #008484;
+        font-size: 32px;
+    }
+}
+
+.part1 {
+    h2 {
+        font-size: 24px;
+        color: #008484;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .left {
+        float: left;
+        margin: 20px 20px 20px 0
+    }
+
+    .right {
+        float: right;
+        margin: 20px 0px 20px 20px
     }
 }
